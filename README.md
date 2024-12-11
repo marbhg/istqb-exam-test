@@ -8,7 +8,7 @@ https://bootcamp-qa.github.io/javascript-test-exam-template/
 
 
 ## JIRA PROJECT
-[JIRA PROJECT](https://bootcampqareyes.atlassian.net/jira/software/projects/IOT/boards/5)
+[JIRA PROJECT](https://marrqabootcamp.atlassian.net/jira/software/projects/ITE/boards/6)
 This project is using JIRA tool for project management and defect traking following agile methodology KANBAB.
 
 
@@ -18,5 +18,5 @@ This project is using JIRA tool for project management and defect traking follow
 
 
 ## AUTHOR
-Reyes Cuesta, QA Engineer
-[LinkedIn Profile](https://www.linkedin.com/in/reyescuesta)
+Marbelis Hugo, QA Engineer
+[LinkedIn Profile](www.linkedin.com/in/marbelis-h-)
