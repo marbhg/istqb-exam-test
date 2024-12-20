@@ -3,6 +3,6 @@ function mostrarDatosdelFormulario() {
 
   let apellido = document.getElementById("apellido").value;
 
-  document.getElementById("bienvenido").textContent = " Bienvenido " + nombre + " " + apellido;
+  document.getElementById("bienvenido").textContent = " Bienvenido " + nombre.toUpperCase() + " " + apellido.toUpperCase();
 
 }
