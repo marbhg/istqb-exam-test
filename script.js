@@ -5,4 +5,6 @@ function mostrarDatosdelFormulario() {
 
   document.getElementById("bienvenido").textContent = " Bienvenido " + nombre.toUpperCase() + " " + apellido.toUpperCase();
 
+  //Ocultas el formulario despues de enviarlo 
+  document.getElementById("formularioestudiante").style.display = "none"; 
 }
