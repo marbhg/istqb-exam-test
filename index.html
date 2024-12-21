@@ -10,32 +10,67 @@
 
 <body>
     <section id='header'>
-        <h1>ISTQB Online Exam</h1>
+        <h1>ISTQB® Online Exam</h1>
         <p>Developed with HTML5, CSS3 and Javascript!</p>
     </section>
 
-    <section id='singup'>
-        <form id="formularioestudiante">
-            <label>Nombre</label>
-            <input type="text" id="nombre" required min="3" max="30">
-            <label>Apellido</label>
-            <input type="text" id="apellido" required min="3" required max="30">
-            <button type="button" onclick="mostrarDatosdelFormulario()">ENVIAR</button>
+    <section id="signup">
+        <form data-testid="signupform" id="signupform">
+            <h2 data-testid="signuptitle">ISTQB Exam Sign Up</h2>
+            <input data-testid="firstname" type="text" id="firstname" placeholder="First name" pattern="[A-Za-z ]+"
+                minlength="3" maxlength="30" required>
+            <input data-testid="lastname" type="text" id="lastname" placeholder="Last name" pattern="[A-Za-z ]+"
+                minlength="3" maxlength="30" required>
+            <button data-testid="signupstudentbutton" type="button" onclick="signUpStudentValidation()">Sign Up</button>
+            <div data-testid="signuperrormessage" id="errormessage"></div>
         </form>
+        <div data-testid="signupwelcomemessage" id="welcomemessage"></div>
     </section>
-
 
     <section id='exam'>
-        <h2>Exam</h2>
-        <p id="bienvenido"></p>
+        <h2>Examen ISTQB</h2>
+        <p id="welcome"></p>
     </section>
 
-    <footer>
-        <p>Author:</p>
-    </footer>
+    <p>The following will show a series of questions with 3 answer options A, B, C, and a default option without an
+        answer.
+        It is not mandatory to answer the questions; they can be left unanswered."</p>
+    <d class="question1">
+        <p>Which of the following statements describes an achievable test objective?</p>
+        <form>
+            <div>
+                <input type="radio" id="a" name="answer" value="a">
+                <label for="a">A. To prove that there are no unfixed defects in the system under test</label>
+            </div>
+            <div>
+                <input type="radio" id="b" name="answer" value="b">
+                <label for="b">B. To prove that there will be no failures after the implementation of the system into
+                    production</label>
+            </div>
+            <div>
+                <input type="radio" id="c" name="answer" value="c">
+                <label for="c">C. To reduce the risk level of the test object and to build confidence in the quality
+                    level</label>
+            </div>
+            <div>
+            </div>
+            <p id="grademessage1"></p>
+            <button type="reset" class="reset-btn" onclick="resetGradeMessage(1)">Reset Answer</button>
+        </form>
 
 
-    <script src="script.js"></script>
+
+
+
+        <button type="button" onclick="finishExam()">Finish Exam</button>
+        <div id="gradeexammessage"></div>
+        </section>
+
+        <footer>
+            <p>Author: Marbelis Hugo</p>
+        </footer>
+
+        <script src="script.js"></script>
 </body>
 
 </html>
