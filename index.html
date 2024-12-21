@@ -20,9 +20,11 @@
             <h2>ISTQB Exam Sign Up</h2>
             <input type="text" id="firstname" placeholder="First name" pattern="[A-Za-z ]+ "minlength="3" maxlength="30" required>
             <input type="text" id="lastname" placeholder="Last name" pattern="[A-Za-z ]+ "minlength="3" maxlength="30" required>
-            <button type="button" onclick="datosdelformulario()">Sign Up</button>
-            <p id="datosdelformulario"></p>
+            <button type="button" onclick="enviar()">Sign Up</button>
         </form>
+        <p id="datosdelformulario"></p>
+
+    
     </section>
 
 
@@ -248,6 +250,7 @@
                                         <label for="a">A.In ATDD, tests are derived from acceptance criteria as part of the system 
                                             design.</label>
                                     </div>
+
                                     <div>
                                         <input type="radio" id="b" name="answer" value="b">
                                         <label for="b">B.In ATDD, test cases are developed first and then the software is implemented 

@@ -19,9 +19,9 @@ body {
 #header {
     text-align: center;
     padding: 2% 0; /* Top and bottom padding in percentage */
-    background-color: #11342c; /* Deep sky blue */
+    background-color: #0e4d3c; /* Deep sky blue */
     color: white;
-    border-bottom: 5px solid #114533; /* Adds a visual separator */
+    border-bottom: 5px solid #083728; /* Adds a visual separator */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
@@ -140,18 +140,19 @@ button:active {
 
 /* Style for the reset button */
 button.reset-btn {
-    background-color: #175d14; /* Vibrant orange */
+    background-color: #83dd3e; /* Vibrant orange */
     margin-bottom: 30px;
 }
 
 /* Reset button hover effect */
 button.reset-btn:hover {
-    background-color: #29ad4e; /* Darker orange */
+    background-color: #c5f844; /* Darker orange */
 }
 
 /* Click effect for the reset button */
 button.reset-btn:active {
-    background-color: #18531d; 
+    background-color: #c5f844; /* Darker orange */
+    background-color: ; 
 }
 
 #examform {
@@ -187,9 +188,16 @@ footer {
     text-align: center;
     margin-top: 20px;
     padding: 2% 0; /* Top and bottom padding in percentage */
-    background-color: #11342c;
+    background-color: #0e4d3c;
     color: white;
     position: relative; /* Ensures footer is correctly positioned */
     bottom: 0; /* Keeps footer at the bottom */
     font-size: 0.9em;
 }
+
+
+
+
+
+    
+
