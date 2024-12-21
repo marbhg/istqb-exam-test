@@ -14,18 +14,17 @@
         <p>Developed with HTML5, CSS3 and Javascript!</p>
     </section>
 
+
     <section id="signup">
-        <form data-testid="signupform" id="signupform">
-            <h2 data-testid="signuptitle">ISTQB Exam Sign Up</h2>
-            <input data-testid="firstname" type="text" id="firstname" placeholder="First name" pattern="[A-Za-z ]+"
-                minlength="3" maxlength="30" required>
-            <input data-testid="lastname" type="text" id="lastname" placeholder="Last name" pattern="[A-Za-z ]+"
-                minlength="3" maxlength="30" required>
-            <button data-testid="signupstudentbutton" type="button" onclick="signUpStudentValidation()">Sign Up</button>
-            <div data-testid="signuperrormessage" id="errormessage"></div>
+        <form id="signupform">
+            <h2>ISTQB Exam Sign Up</h2>
+            <input type="text" id="firstname" placeholder="First name" pattern="[A-Za-z ]+ "minlength="3" maxlength="30" required>
+            <input type="text" id="lastname" placeholder="Last name" pattern="[A-Za-z ]+ "minlength="3" maxlength="30" required>
+            <button type="button" onclick="datosdelformulario()">Sign Up</button>
+            <p id="datosdelformulario"></p>
         </form>
-        <div data-testid="signupwelcomemessage" id="welcomemessage"></div>
     </section>
+
 
     <section id='exam'>
         <h2>Examen ISTQB</h2>
@@ -34,7 +33,8 @@
 
     <p>The following will show a series of questions with 3 answer options A, B, C, and a default option without an
         answer.
-        It is not mandatory to answer the questions; they can be left unanswered."</p>
+        It is not mandatory to answer the questions; they can be left unanswered.</p>
+        <p>.</p>
     <d class="question1">
         <p>Which of the following statements describes an achievable test objective?</p>
         <form>
@@ -288,16 +288,6 @@
                                     <p id="grademessage10"></p>
                                     <button type="reset" class="reset-btn" onclick="resetGradeMessage(10)">Reset Answer</button>
                                 </form>
-
-
-
-
-
-
-
-
-
-
 
 
         <button type="button" onclick="finishExam()">Finish Exam</button>

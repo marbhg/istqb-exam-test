@@ -1,16 +1,17 @@
 
-function mostrarDatosdelFormulario() {
-  let nombre = document.getElementById("firstname").value;
+function datosdeformulario() {
+  let name = document.getElementById("firstname").value;
+  let lastname = document.getElementById("lastname").value;
+document.getElementById("datosdelformulario").textContent ="Datos del formulario, name " + name + "lastname " + lastaname;
+  //Mostrar nombre y apellido en mayuscula.
+  document.getElementById("welcomemessage").textContent = " Welcome " + name.toUpperCase() + " " + lastname.toUpperCase();
 
-  let apellido = document.getElementById("lastname").value;
-  
-//Mostrar nombre y apellido en mayuscula.
-  document.getElementById("welcome").textContent = " Welcome " + nombre.toUpperCase() + " " + apellido.toUpperCase();
+  //Ocultar el formulario despues de enviarlo 
+  document.getElementById("datosdelformulario").style.display = "none";
 
-  //Ocultas el formulario despues de enviarlo 
-  document.getElementById("formularioestudiante").style.display = "none"; 
+}
 
-  //Mostrar datos de examen STQL
+//Mostrar datos de examen STQL
 // Función para verificar la respuesta seleccionada QUESTION1
 function checkAnswer(questionNumber) {
   const messageElement = document.getElementById(`grademessage${questionNumber}`);
@@ -18,14 +19,14 @@ function checkAnswer(questionNumber) {
   const selectedOption = document.querySelector(`.question${questionNumber} input[name="answer"]:checked`);
 
   if (!selectedOption) {
-      messageElement.textContent = "Please select an answer.";
-      messageElement.style.color = "orange";
+    messageElement.textContent = "Please select an answer.";
+    messageElement.style.color = "orange";
   } else if (selectedOption.value === correctAnswer) {
-      messageElement.textContent = "Correct! This statement is achievable.";
-      messageElement.style.color = "green";
+    messageElement.textContent = "Correct! This statement is achievable.";
+    messageElement.style.color = "green";
   } else {
-      messageElement.textContent = "Incorrect. Please try again.";
-      messageElement.style.color = "red";
+    messageElement.textContent = "Incorrect. Please try again.";
+    messageElement.style.color = "red";
   }
 }
 
@@ -42,14 +43,14 @@ function checkAnswer(questionNumber) {
   const selectedOption = document.querySelector(`.question${questionNumber} input[name="answer"]:checked`);
 
   if (!selectedOption) {
-      messageElement.textContent = "Please select an answer.";
-      messageElement.style.color = "orange";
+    messageElement.textContent = "Please select an answer.";
+    messageElement.style.color = "orange";
   } else if (selectedOption.value === correctAnswer) {
-      messageElement.textContent = "Correct! This statement is achievable.";
-      messageElement.style.color = "green";
+    messageElement.textContent = "Correct! This statement is achievable.";
+    messageElement.style.color = "green";
   } else {
-      messageElement.textContent = "Incorrect. Please try again.";
-      messageElement.style.color = "red";
+    messageElement.textContent = "Incorrect. Please try again.";
+    messageElement.style.color = "red";
   }
 }
 
@@ -66,14 +67,14 @@ function checkAnswer(questionNumber) {
   const selectedOption = document.querySelector(`.question${questionNumber} input[name="answer"]:checked`);
 
   if (!selectedOption) {
-      messageElement.textContent = "Please select an answer.";
-      messageElement.style.color = "orange";
+    messageElement.textContent = "Please select an answer.";
+    messageElement.style.color = "orange";
   } else if (selectedOption.value === correctAnswer) {
-      messageElement.textContent = "Correct! This statement is achievable.";
-      messageElement.style.color = "green";
+    messageElement.textContent = "Correct! This statement is achievable.";
+    messageElement.style.color = "green";
   } else {
-      messageElement.textContent = "Incorrect. Please try again.";
-      messageElement.style.color = "red";
+    messageElement.textContent = "Incorrect. Please try again.";
+    messageElement.style.color = "red";
   }
 }
 // Función para reiniciar el mensaje de respuestA
@@ -88,14 +89,14 @@ function checkAnswer(questionNumber) {
   const selectedOption = document.querySelector(`.question${questionNumber} input[name="answer"]:checked`);
 
   if (!selectedOption) {
-      messageElement.textContent = "Please select an answer.";
-      messageElement.style.color = "orange";
+    messageElement.textContent = "Please select an answer.";
+    messageElement.style.color = "orange";
   } else if (selectedOption.value === correctAnswer) {
-      messageElement.textContent = "Correct! This statement is achievable.";
-      messageElement.style.color = "green";
+    messageElement.textContent = "Correct! This statement is achievable.";
+    messageElement.style.color = "green";
   } else {
-      messageElement.textContent = "Incorrect. Please try again.";
-      messageElement.style.color = "red";
+    messageElement.textContent = "Incorrect. Please try again.";
+    messageElement.style.color = "red";
   }
 }
 
@@ -112,14 +113,14 @@ function checkAnswer(questionNumber) {
   const selectedOption = document.querySelector(`.question${questionNumber} input[name="answer"]:checked`);
 
   if (!selectedOption) {
-      messageElement.textContent = "Please select an answer.";
-      messageElement.style.color = "orange";
+    messageElement.textContent = "Please select an answer.";
+    messageElement.style.color = "orange";
   } else if (selectedOption.value === correctAnswer) {
-      messageElement.textContent = "Correct! This statement is achievable.";
-      messageElement.style.color = "green";
+    messageElement.textContent = "Correct! This statement is achievable.";
+    messageElement.style.color = "green";
   } else {
-      messageElement.textContent = "Incorrect. Please try again.";
-      messageElement.style.color = "red";
+    messageElement.textContent = "Incorrect. Please try again.";
+    messageElement.style.color = "red";
   }
 }
 
@@ -135,14 +136,14 @@ function checkAnswer(questionNumber) {
   const selectedOption = document.querySelector(`.question${questionNumber} input[name="answer"]:checked`);
 
   if (!selectedOption) {
-      messageElement.textContent = "Please select an answer.";
-      messageElement.style.color = "orange";
+    messageElement.textContent = "Please select an answer.";
+    messageElement.style.color = "orange";
   } else if (selectedOption.value === correctAnswer) {
-      messageElement.textContent = "Correct! This statement is achievable.";
-      messageElement.style.color = "green";
+    messageElement.textContent = "Correct! This statement is achievable.";
+    messageElement.style.color = "green";
   } else {
-      messageElement.textContent = "Incorrect. Please try again.";
-      messageElement.style.color = "red";
+    messageElement.textContent = "Incorrect. Please try again.";
+    messageElement.style.color = "red";
   }
 }
 
@@ -158,14 +159,14 @@ function checkAnswer(questionNumber) {
   const selectedOption = document.querySelector(`.question${questionNumber} input[name="answer"]:checked`);
 
   if (!selectedOption) {
-      messageElement.textContent = "Please select an answer.";
-      messageElement.style.color = "orange";
+    messageElement.textContent = "Please select an answer.";
+    messageElement.style.color = "orange";
   } else if (selectedOption.value === correctAnswer) {
-      messageElement.textContent = "Correct! This statement is achievable.";
-      messageElement.style.color = "green";
+    messageElement.textContent = "Correct! This statement is achievable.";
+    messageElement.style.color = "green";
   } else {
-      messageElement.textContent = "Incorrect. Please try again.";
-      messageElement.style.color = "red";
+    messageElement.textContent = "Incorrect. Please try again.";
+    messageElement.style.color = "red";
   }
 }
 
@@ -182,14 +183,14 @@ function checkAnswer(questionNumber) {
   const selectedOption = document.querySelector(`.question${questionNumber} input[name="answer"]:checked`);
 
   if (!selectedOption) {
-      messageElement.textContent = "Please select an answer.";
-      messageElement.style.color = "orange";
+    messageElement.textContent = "Please select an answer.";
+    messageElement.style.color = "orange";
   } else if (selectedOption.value === correctAnswer) {
-      messageElement.textContent = "Correct! This statement is achievable.";
-      messageElement.style.color = "green";
+    messageElement.textContent = "Correct! This statement is achievable.";
+    messageElement.style.color = "green";
   } else {
-      messageElement.textContent = "Incorrect. Please try again.";
-      messageElement.style.color = "red";
+    messageElement.textContent = "Incorrect. Please try again.";
+    messageElement.style.color = "red";
   }
 }
 
@@ -206,14 +207,14 @@ function checkAnswer(questionNumber) {
   const selectedOption = document.querySelector(`.question${questionNumber} input[name="answer"]:checked`);
 
   if (!selectedOption) {
-      messageElement.textContent = "Please select an answer.";
-      messageElement.style.color = "orange";
+    messageElement.textContent = "Please select an answer.";
+    messageElement.style.color = "orange";
   } else if (selectedOption.value === correctAnswer) {
-      messageElement.textContent = "Correct! This statement is achievable.";
-      messageElement.style.color = "green";
+    messageElement.textContent = "Correct! This statement is achievable.";
+    messageElement.style.color = "green";
   } else {
-      messageElement.textContent = "Incorrect. Please try again.";
-      messageElement.style.color = "red";
+    messageElement.textContent = "Incorrect. Please try again.";
+    messageElement.style.color = "red";
   }
 }
 
@@ -230,14 +231,14 @@ function checkAnswer(questionNumber) {
   const selectedOption = document.querySelector(`.question${questionNumber} input[name="answer"]:checked`);
 
   if (!selectedOption) {
-      messageElement.textContent = "Please select an answer.";
-      messageElement.style.color = "orange";
+    messageElement.textContent = "Please select an answer.";
+    messageElement.style.color = "orange";
   } else if (selectedOption.value === correctAnswer) {
-      messageElement.textContent = "Correct! This statement is achievable.";
-      messageElement.style.color = "green";
+    messageElement.textContent = "Correct! This statement is achievable.";
+    messageElement.style.color = "green";
   } else {
-      messageElement.textContent = "Incorrect. Please try again.";
-      messageElement.style.color = "red";
+    messageElement.textContent = "Incorrect. Please try again.";
+    messageElement.style.color = "red";
   }
 }
 
@@ -247,4 +248,4 @@ function resetGradeMessage(questionNumber) {
   messageElement.textContent = "";
 }
 }.
- 
+
