@@ -1,13 +1,20 @@
-
 function enviar() {
-  let name = document.getElementById("firstname").value;
-  let lastname = document.getElementById("lastname").value;
-  document.getElementById("datosdelformulario").textContent = "Datos del formulario, name " + name + "lastname " + lastname;
-  //Mostrar nombre y apellido en mayuscula.
-  document.getElementById("datosdelformulario").textContent = " Welcome " + name.toUpperCase() + " " + lastname.toUpperCase();
-  //Ocultar el formulario despues de enviarlo 
-  document.getElementById("datosdelformulario").style.display = "none";
+  // Obtener valores de los inputs
+  let name = document.getElementById("firstname").value.trim();
+  let lastname = document.getElementById("lastname").value.trim();
 
+  // Validar que no estén vacíos
+  if (name === "" || lastname === "") {
+      alert("Por favor, rellena todos los campos correctamente.");
+      return;
+  }
+
+  // Mostrar mensaje de bienvenida en mayúsculas
+  document.getElementById("datosdelformulario").textContent =
+      "WELCOME " + name.toUpperCase() + " " + lastname.toUpperCase() + "!";
+
+  // Ocultar el formulario
+  document.getElementById("signupform").style.display = "none";
 }
 
 //Mostrar datos de examen STQL
