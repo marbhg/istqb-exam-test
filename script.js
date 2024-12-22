@@ -24,7 +24,7 @@ function checkAnswer(questionNumber) {
 
   if (!selectedOption) {
     messageElement.textContent = "Please select an answer.";
-    messageElement.style.color = "orange";
+    messageElement.style.color = "red";
   } else if (selectedOption.value === correctAnswer) {
     messageElement.textContent = "Correct! This statement is achievable.";
     messageElement.style.color = "green";
