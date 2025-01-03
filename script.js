@@ -5,17 +5,24 @@ function enviar() {
 
   // Validar que no estén vacíos
   if (name === "" || lastname === "") {
-      alert("Por favor, rellena todos los campos correctamente.");
-      return;
+    alert("Por favor, rellena todos los campos correctamente.");
+    return;
   }
   // Mostrar mensaje de bienvenida en mayúsculas
   document.getElementById("datosdelformulario").textContent =
-      "WELCOME " + name.toUpperCase() + " " + lastname.toUpperCase() + "!";
+    "WELCOME " + name.toUpperCase() + " " + lastname.toUpperCase() + "!";
   // Ocultar el formulario
   document.getElementById("signupform").style.display = "none";
 }
 
+//Ocultar las preguntas una vez se rellene el formulario
+document.getElementById("questionsection").style.display = "none";
+
+
+
 //Mostrar datos del formulario
+document.getElementById("questionsection").style.display = "block";
+
 // Función para verificar la respuesta seleccionada QUESTION1
 function checkAnswer(questionNumber) {
   const messageElement = document.getElementById(`grademessage${questionNumber}`);
@@ -40,17 +47,17 @@ function checkAnswer(questionNumber) {
 
     // Calcular la puntuación según las reglas
     if (respuesta === "correct") {
-        puntuacion = 2; // Respuesta correcta
+      puntuacion = 2; // Respuesta correcta
     } else if (respuesta === "incorrect") {
-        puntuacion = -1; // Respuesta incorrecta
+      puntuacion = -1; // Respuesta incorrecta
     } else {
-        puntuacion = 0; // No respondió
+      puntuacion = 0; // No respondió
     }
 
     // Mostrar la puntuación en el párrafo correspondiente
     const scoreDisplay = document.getElementById("score1");
     scoreDisplay.textContent = `Tu puntuación para esta pregunta es: ${puntuacion}`;
-}
+  }
 
 
 }
