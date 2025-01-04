@@ -19,26 +19,28 @@ function enviar() {
 document.getElementById("questionsection").style.display = "none";
 
 
-
 //Mostrar datos del formulario
 document.getElementById("questionsection").style.display = "block";
 
 // Función para verificar la respuesta seleccionada QUESTION1
-function checkAnswer(questionNumber) {
-  const messageElement = document.getElementById(`grademessage${questionNumber}`);
-  const correctAnswer = "c"; // La respuesta correcta para esta pregunta
-  const selectedOption = document.querySelector(`.question${questionNumber} input[name="answer"]:checked`);
+function evaluar (question1) {
+  let option1 = document.getElementById("forA").value;
+  let option2 = document.getElementById("forB").value;
+  let option3 = document.getElementById("forC").value;
 
-  if (!selectedOption) {
-    messageElement.textContent = "Please select an answer.";
-    messageElement.style.color = "red";
-  } else if (selectedOption.value === correctAnswer) {
-    messageElement.textContent = "Correct! This statement is achievable.";
-    messageElement.style.color = "green";
-  } else {
-    messageElement.textContent = "Incorrect. Please try again.";
-    messageElement.style.color = "red";
-  }
+  //Funcion para obtener la respuesta correcta
+function respuestaCorrecta (forA, forB, forC){
+  
+}
+
+
+  const messageElement = document.getElementById(`grademessage${question1}`);
+  const correctAnswer = "c"; // La respuesta correcta para esta pregunta
+  const selectedOption = document.querySelector(`.question${question1}} input[name="answer"]:checked`);
+
+
+
+ 
   function calcularPuntuacionPregunta1() {
     // Obtener el valor de la respuesta seleccionada
     const form = document.getElementById("question1-form");
@@ -281,3 +283,12 @@ function resetGradeMessage(questionNumber) {
 }
 
 
+if (!question1) {
+  messageElement.textContent = "Please select an answer.";
+  messageElement.style.color = "red";
+} else if (selectedOption.value === correctAnswer) {
+  messageElement.textContent = "Correct! This statement is achievable.";
+  messageElement.style.color = "green";
+} else {
+  messageElement.textContent = "Incorrect. Please try again.";
+  messageElement.style.color = "red";
