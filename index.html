@@ -35,10 +35,11 @@
     <p>The following will show a series of questions with 3 answer options A, B, C, and a default option without an
         answer.
         It is not mandatory to answer the questions; they can be left unanswered.</p>
+
     <section id="questionsection">
         <d class="question1">
             <p>1. Which of the following statements describes an achievable test objective?</p>
-            <form>
+            <form id="respuesta1">
                 <div>
                     <input type="radio" id="a" name="answer" value="a">
                     <label for="a">A. To prove that there are no unfixed defects in the system under test</label>
@@ -57,7 +58,7 @@
                 </div>
                 <p id="grademessage1"></p>
                 <button type="reset" class="reset-btn" onclick="resetGradeMessage(1)">Reset Answer</button>
-                <button type="button" onclick="questionNumber(c)">Corregir</button>
+                <button type="button" onclick="ValidarRespuesta()">Corregir</button>
             </form>
 
 

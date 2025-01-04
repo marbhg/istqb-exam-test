@@ -17,10 +17,9 @@ function enviar() {
 
 //Ocultar las preguntas una vez se rellene el formulario
 document.getElementById("questionsection").style.display = "none";
-
-
 //Mostrar datos del formulario
 document.getElementById("questionsection").style.display = "block";
+
 
 // Función para verificar la respuesta seleccionada QUESTION1
 function evaluar (question1) {
@@ -30,8 +29,23 @@ function evaluar (question1) {
 
   //Funcion para obtener la respuesta correcta
 function respuestaCorrecta (forA, forB, forC){
-  
+  let correcta = (forC);
+  document.getElementById("correcta").textContent = "La respuesta correcta de " + evaluar + " es " + forC;
+
 }
+
+function ValidarRespuesta () {
+let formulario = document.getEelementById("respuesta1");
+
+if (formulario.checkValidity()){
+  evaluar()
+}
+  else {
+    document.getElementById("respuestaCorrecta").textContent = " la respuesta correcta es " + forC;
+
+  }
+}
+
 
 
   const messageElement = document.getElementById(`grademessage${question1}`);
@@ -281,6 +295,11 @@ function resetGradeMessage(questionNumber) {
   const messageElement = document.getElementById(`grademessage${questionNumber}`);
   messageElement.textContent = "";
 }
+
+
+
+
+
 
 
 if (!question1) {
