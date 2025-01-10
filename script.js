@@ -83,8 +83,8 @@ if (formulario.checkValidity()){
     scoreDisplay.textContent = `Tu puntuación para esta pregunta es: ${puntuacion}`;
   }
 //Pregunta 4
-function calcularPuntuacionPregunta4(){
-let pregunta = document.getElelementById("respuesta4").value;
+function calcularPuntuacionPregunta4(){                       
+let pregunta = document.getElementById("respuesta4").value;
 let puntuacion = 0;
 let correcta = b;
 
@@ -104,7 +104,7 @@ if (respuesta === correcta){
 
 //Pregunta 5
 function calcularPuntuacionPregunta5(){
-  let pregunta = document.getElelementById("respuesta5").value;
+  let pregunta = document.getElementById("respuesta5").value;
   let puntuacion = 0;
   let correcta = b;
   
@@ -124,7 +124,7 @@ function calcularPuntuacionPregunta5(){
 
   //Pregunta 6
   function calcularPuntuacionPregunta6(){
-    let pregunta = document.getElelementById("respuesta6").value;
+    let pregunta = document.getElementById("respuesta6").value;
     let puntuacion = 0;
     let correcta = c;
     
@@ -144,7 +144,7 @@ function calcularPuntuacionPregunta5(){
 
     //Pregunta 7
     function calcularPuntuacionPregunta7(){
-      let pregunta = document.getElelementById("respuesta7").value;
+      let pregunta = document.getElementById("respuesta7").value;
       let puntuacion = 0;
       let correcta = a;
       
@@ -164,7 +164,7 @@ function calcularPuntuacionPregunta5(){
 
       //Pregunta 8
       function calcularPuntuacionPregunta8(){
-        let pregunta = document.getElelementById("respuesta8").value;
+        let pregunta = document.getElementById("respuesta8").value;
         let puntuacion = 0;
         let correcta = c;
         
@@ -184,7 +184,7 @@ function calcularPuntuacionPregunta5(){
 
         //Pregunta 9
         function calcularPuntuacionPregunta9(){
-          let pregunta = document.getElelementById("respuesta9").value;
+          let pregunta = document.getElementById("respuesta9").value;
           let puntuacion = 0;
           let correcta = c;
           
@@ -204,7 +204,7 @@ function calcularPuntuacionPregunta5(){
 
           //Pregunta 10
           function calcularPuntuacionPregunta10(){
-            let pregunta = document.getElelementById("respuesta10").value;
+            let pregunta = document.getElementById("respuesta10").value;
             let puntuacion = 0;
             let correcta = c;
             
