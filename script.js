@@ -97,15 +97,127 @@ if (respuesta === correcta){
   puntuacion = -1; //Respuesta incorrecta
 }
 
+    // Mostrar la puntuación en el párrafo correspondiente
+    let scoreDisplay = document.getElementById("grademessage4");
+    scoreDisplay.textContent = `Tu puntuación para esta pregunta es: ${puntuacion}`;
+  }
+
 //Pregunta 5
+function calcularPuntuacionPregunta5(){
+  let pregunta = document.getElelementById("respuesta5").value;
+  let puntuacion = 0;
+  let correcta = b;
+  
+  //Calcular la puntuacion segun las reglas 
+  if (respuesta === correcta){
+    puntuacion = 2; //Respuesta correcta  
+  } else if (respuesta === ""){
+    puntuacion = 0; //Respuesta Vacia
+  }else {
+    puntuacion = -1; //Respuesta incorrecta
+  }
 
+    // Mostrar la puntuación en el párrafo correspondiente
+    let scoreDisplay = document.getElementById("grademessage5");
+    scoreDisplay.textContent = `Tu puntuación para esta pregunta es: ${puntuacion}`;
+  }
 
+  //Pregunta 6
+  function calcularPuntuacionPregunta6(){
+    let pregunta = document.getElelementById("respuesta6").value;
+    let puntuacion = 0;
+    let correcta = c;
+    
+    //Calcular la puntuacion segun las reglas 
+    if (respuesta === correcta){
+      puntuacion = 2; //Respuesta correcta  
+    } else if (respuesta === ""){
+      puntuacion = 0; //Respuesta Vacia
+    }else {
+      puntuacion = -1; //Respuesta incorrecta
+    }
+  
+      // Mostrar la puntuación en el párrafo correspondiente
+      let scoreDisplay = document.getElementById("grademessage6");
+      scoreDisplay.textContent = `Tu puntuación para esta pregunta es: ${puntuacion}`;
+    }
 
+    //Pregunta 7
+    function calcularPuntuacionPregunta7(){
+      let pregunta = document.getElelementById("respuesta7").value;
+      let puntuacion = 0;
+      let correcta = a;
+      
+      //Calcular la puntuacion segun las reglas 
+      if (respuesta === correcta){
+        puntuacion = 2; //Respuesta correcta  
+      } else if (respuesta === ""){
+        puntuacion = 0; //Respuesta Vacia
+      }else {
+        puntuacion = -1; //Respuesta incorrecta
+      }
+    
+        // Mostrar la puntuación en el párrafo correspondiente
+        let scoreDisplay = document.getElementById("grademessage7");
+        scoreDisplay.textContent = `Tu puntuación para esta pregunta es: ${puntuacion}`;
+      }
 
+      //Pregunta 8
+      function calcularPuntuacionPregunta8(){
+        let pregunta = document.getElelementById("respuesta8").value;
+        let puntuacion = 0;
+        let correcta = c;
+        
+        //Calcular la puntuacion segun las reglas 
+        if (respuesta === correcta){
+          puntuacion = 2; //Respuesta correcta  
+        } else if (respuesta === ""){
+          puntuacion = 0; //Respuesta Vacia
+        }else {
+          puntuacion = -1; //Respuesta incorrecta
+        }
+      
+          // Mostrar la puntuación en el párrafo correspondiente
+          let scoreDisplay = document.getElementById("grademessage8");
+          scoreDisplay.textContent = `Tu puntuación para esta pregunta es: ${puntuacion}`;
+        }
 
+        //Pregunta 9
+        function calcularPuntuacionPregunta9(){
+          let pregunta = document.getElelementById("respuesta9").value;
+          let puntuacion = 0;
+          let correcta = c;
+          
+          //Calcular la puntuacion segun las reglas 
+          if (respuesta === correcta){
+            puntuacion = 2; //Respuesta correcta  
+          } else if (respuesta === ""){
+            puntuacion = 0; //Respuesta Vacia
+          }else {
+            puntuacion = -1; //Respuesta incorrecta
+          }
+        
+            // Mostrar la puntuación en el párrafo correspondiente
+            let scoreDisplay = document.getElementById("grademessage9");
+            scoreDisplay.textContent = `Tu puntuación para esta pregunta es: ${puntuacion}`;
+          }
 
-
-
-
-
-}
+          //Pregunta 10
+          function calcularPuntuacionPregunta10(){
+            let pregunta = document.getElelementById("respuesta10").value;
+            let puntuacion = 0;
+            let correcta = c;
+            
+            //Calcular la puntuacion segun las reglas 
+            if (respuesta === correcta){
+              puntuacion = 2; //Respuesta correcta  
+            } else if (respuesta === ""){
+              puntuacion = 0; //Respuesta Vacia
+            }else {
+              puntuacion = -1; //Respuesta incorrecta
+            }
+          
+              // Mostrar la puntuación en el párrafo correspondiente
+              let scoreDisplay = document.getElementById("grademessage10");
+              scoreDisplay.textContent = `Tu puntuación para esta pregunta es: ${puntuacion}`;
+            }
