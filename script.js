@@ -43,6 +43,7 @@ if (formulario.checkValidity()){
     scoreDisplay.textContent = `Tu puntuación para esta pregunta es: ${puntuacion}`;
   }
 
+
   //Pregunta 2
   function calcularPuntuacionPregunta2() {
     let respuesta = document.getElementById("respuesta2").value; // Accede al valor del botón seleccionado
@@ -221,3 +222,16 @@ function calcularPuntuacionPregunta10() {
   let scoreDisplay = document.getElementById("grademessage10");
   scoreDisplay.textContent = `Tu puntuación para esta pregunta es: ${puntuacion}`;
 }
+function evaluar(){
+  
+} 
+
+
+function evaluarTodos(){
+//Evaluar desde la pregunta 1 a la 10
+  for (let i=0 ; i < 10 ; i++ ){
+
+  }
+
+}
+

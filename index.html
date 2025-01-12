@@ -31,15 +31,15 @@
         <p>The following will show a series of questions with 3 answer options A, B, C, and a default option without an
             answer.
             It is not mandatory to answer the questions; they can be left unanswered.</p>
-        <p>1. Which of the following statements describes an achievable test objective?</p>
+        
         <form id="question1">
+            <p>1. Which of the following statements describes an achievable test objective?</p>
             <select id="respuesta1">
                 <option value=""> - - </option>
                 <option value="a">A. To prove that there are no unfixed defects in the system under test</option>
-                <option value="b">B. To prove that there will be no failures after the implementation of the system into
-                    production</option>
-                <option value="c">C. To reduce the risk level of the test object and to build confidence in the quality
-                    level</option>
+                <option value="b">B. To prove that there will be no failures after the implementation of the system into production</option>
+                <option value="c">C. To reduce the risk level of the test object and to build confidence in the quality level</option>
+                <option value="d">Sin responder</option>
             </select>
 
             <p id="grademessage1"></p>
@@ -50,10 +50,12 @@
             <form id="question2">
                 <p>2. What is the main difference between testing and debugging?</p>
                 <select id="respuesta2">
-                <option value=""> - - </option>
+                <option value="">- -</option>
                 <option value="a">A.Testing is the process of finding defects, while debugging is the process of fixing defects </option>
                 <option value="b">B.Testing is the process of running software, while debugging is the process of analyzing the software.</option>
                 <option value="c">C.Testing verifies requirements, while debugging verifies design.</option>
+                <option value="d">Sin responder</option>
+
             </select>
                 <p id="grademessage2"></p>
                 <button type="button" onclick="calcularPuntuacionPregunta2()">Corregir</button>
@@ -70,7 +72,9 @@
                         <option value="a">A..Perform the effort estimation for testing the integration of the mobile application with the payment service </option>
                         <option value="b">B.Decide whether to test the ability to split payments among multiple users</option>
                         <option value="c">C.Using boundary value analysis (BVA) to derive the test data for the test cases that check the correct payment processing for the minimum allowed amount to  be paid.</option>
+                        <option value="d">Sin responder</option>
                     </select>
+
                     <p id="grademessage3"></p>
                     <button type="button" onclick="calcularPuntuacionPregunta3()">Corregir</button>
                 </form>
@@ -84,6 +88,7 @@
                             <option value="a">A.Maintenance testing can be fully automated on the basis of changes to the original requirements.</option>
                             <option value="b">B.Whether or not the targeted coverage has been achieved can be more efficiently determined.</option>
                             <option value="c">C.The test management role can determine which testers found the defects with the highest severity.</option>
+                            <option value="d">Sin responder</option>
                         </select>
                         <p id="grademessage4"></p>
                         <button type="button" onclick="calcularPuntuacionPregunta4()">Corregir</button>
@@ -98,6 +103,7 @@
                             <option value="a"> A.The testing role executes test cases, the test management role plans and monitors the testing activities and reports the deviation to all testers.</option> 
                             <option value="b">B.The testing role performs test analysis and test design activities,creates and executes test cases, and the test management role coordinates testing resources and reports to stakeholders</=>
                             <option value="c">C.The testing role decides the tests to be automated and prioritizes test cases,and the test management role analyzes risks and prioritizes tests.</option>
+                            <option value="d">Sin responder</option>
                         </select>
                             <p id="grademessage5"></p>
                             <button type="button" onclick="calcularPuntuacionPregunta5()">Corregir</button>
@@ -113,7 +119,8 @@
                                               communication with the developers to defect reporting through the defect management system.</option>
                             <option value="c">C.When specifications contain ambiguities and inconsistencies, assumptions are made by developers on their interpretation, and an independent test team can
                                               be useful in questioning those assumptions and the interpretation made by the developer.</option>
-                          </select>    
+                         <option value="d">Sin responder</option>
+                        </select>    
                                 <p id="grademessage6"></p>
                                 <button type="button" onclick="calcularPuntuacionPregunta6()">Corregir</button>
                             </form>
@@ -127,7 +134,8 @@
                         <option value="a">A.Testers help business representatives to create suitable acceptance tests.</option>
                         <option value="b">B.Business representatives are not part of the whole team approach</option>
                         <option value="c">C.Business representatives decide together with project management on test automation approaches.</option>
-                      </select>     
+                        <option value="d">Sin responder</option>
+                    </select>     
                         <p id="grademessage7"></p>
                         <button type="button" onclick="calcularPuntuacionPregunta1()">Corregir</button>
                                 </form>
@@ -141,7 +149,8 @@
                         <option value="a">A.Testing should be performed only after development is complete.</option>
                         <option value="b">B.Testing should be performed under the leadership of development.</option>
                         <option value="c">C.Testing should start early in the development process.</option>
-                      </select>           
+                        <option value="d">Sin responder</option>
+                    </select>           
                         <p id="grademessage8"></p>
                        <button type="button" onclick="calcularPuntuacionPregunta8()">Corregir</button>
                        </form>
@@ -155,7 +164,8 @@
                     <option value="a">A.In ATDD, tests are derived from acceptance criteria as part of the system design.</option>
                     <option value="b">B.In ATDD, test cases are developed first and then the software is implemented incrementally against the test cases and defined acceptance criteria.</option>
                     <option value="c">C.With ATDD, tests are based on the desired behavior of the software, whick makes it easier for team members to understand the tests and the defined  acceptance criteria.</option>
-                    </select>                      
+                    <option value="d">Sin responder</option>
+                </select>                      
                     <p id="grademessage9"></p>
                     <button type="button" onclick="calcularPuntuacionPregunta9()">Corregir</button>
                     </form>
@@ -168,13 +178,14 @@
                      <option value="a">A.Reviewing the user requirements before they are formally accepted by the stakeholders.</option>
                      <option value="b">B.Create component test cases before programming the associated code.</option>
                      <option value="c">C.Execution of non-functional tests, starting during system level testing.</option>
+                     <option value="d">Sin responder</option>
                     </select>                 
                     <p id="grademessage10"></p>
                     <button type="button" onclick="calcularPuntuacionPregunta10()">Corregir</button>
                     </form>
     </section>
 
-
+    <button type="button" onclick="Correciondepreguntas()">Corregir</button>
     <button type="button" onclick="finishExam()">Finish Exam</button>
     <div id="gradeexammessage"></div>
     </section>
