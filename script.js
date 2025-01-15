@@ -222,16 +222,24 @@ function calcularPuntuacionPregunta10() {
   let scoreDisplay = document.getElementById("grademessage10");
   scoreDisplay.textContent = `Tu puntuación para esta pregunta es: ${puntuacion}`;
 }
-function evaluar(){
-  
-} 
 
 
-function evaluarTodos(){
-//Evaluar desde la pregunta 1 a la 10
-  for (let i=0 ; i < 10 ; i++ ){
-
-  }
+function evaluarTodo(){
+  const formulario = document.getElementById('questionsection');
+//Validar preguntas 
+if(formulario.checkValidity()){
+calcularPreguntas()
+} else{
+  document.getElementByeId('resultado').textContent = "El resultado es incorrecto"
+}
 
 }
+
+function calcularPreguntas() {
+  //Obtener el valor de las preguntas 
+const respuesta1 = document.getElelemtByeId('respuesta1').valueAsNumber;
+const respuesta2 = document.getEtementByeId('respuesta2').valueAsNumber;
+
+}
+
 
