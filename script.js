@@ -224,13 +224,17 @@ function calcularPuntuacionPregunta10() {
 }
 
 
+
+
+
+
 function evaluarTodo(){
   const formulario = document.getElementById('questionsection');
 //Validar preguntas 
 if(formulario.checkValidity()){
 calcularPreguntas()
 } else{
-  document.getElementByeId('resultado').textContent = "El resultado es incorrecto"
+  document.getElementById('resultado').textContent = "El resultado es incorrecto"
 }
 
 }
@@ -242,4 +246,15 @@ const respuesta2 = document.getEtementByeId('respuesta2').valueAsNumber;
 
 }
 
+function evaluar(id){
+  let respuesta1 = documentgetElementById('respuesta1' + id).valueAsNumber
+  let respuestacorrecta = documentgetElementById('respuestacorrecta' + id).valueAsNumber
+ 
+  //Calculamos la nota final
+  let notaFinal = calcularnota(respuesta1, respuestacorrecta);
+
+
+
+
+}
 
