@@ -23,11 +23,21 @@ if (formulario.checkValidity()){
     document.getElementById("datosdelformulario").textContent = " Formulario incorrecto ";
   }
 }
+
+function evaluarTodo(){
+  let puntuacionFinal1 = 0;
+  for(let numeroPregunta = 1; numeroPregunta10; numeroPregunta++){
+  puntuacionFinal += calcularPuntuacionPregunta(numeroPregunta);
+  }
+  document.getElementById('resultado'.textContent = "La puntuacion final es " + puntuacionFinal);
+}
+
+
 //Pregunta 1
-  function calcularPuntuacionPregunta1() {
-    let respuesta = document.getElementById("respuesta1").value; // Accede al valor del botón seleccionado
+  function calcularPuntuacionPregunta(numeroPregunta) {
+    let respuesta = document.getElementById("respuesta " + numeroPregunta).value; // Accede al valor del botón seleccionado
     let puntuacion = 0;
-    let correcta = "c";
+    let correcta = ["c","a","b","a","a","c","b","a","a","c"];
 
     // Calcular la puntuación según las reglas
     if (respuesta === correcta) {
@@ -39,9 +49,11 @@ if (formulario.checkValidity()){
     }
 
     // Mostrar la puntuación en el párrafo correspondiente
-    let scoreDisplay = document.getElementById("grademessage1");
+    let scoreDisplay = document.getElementById("grademessage " + numeroPregunta);
     scoreDisplay.textContent = `Tu puntuación para esta pregunta es: ${puntuacion}`;
+    return puntuacion;  
   }
+
 
 
   //Pregunta 2
@@ -225,36 +237,12 @@ function calcularPuntuacionPregunta10() {
 
 
 
-
-
-
-function evaluarTodo(){
-  const formulario = document.getElementById('questionsection');
-//Validar preguntas 
-if(formulario.checkValidity()){
-calcularPreguntas()
-} else{
-  document.getElementById('resultado').textContent = "El resultado es incorrecto"
-}
+function calcularPreguntaPuntuacion(){
 
 }
 
-function calcularPreguntas() {
-  //Obtener el valor de las preguntas 
-const respuesta1 = document.getElelemtByeId('respuesta1').valueAsNumber;
-const respuesta2 = document.getEtementByeId('respuesta2').valueAsNumber;
-
-}
-
-function evaluar(id){
-  let respuesta1 = documentgetElementById('respuesta1' + id).valueAsNumber
-  let respuestacorrecta = documentgetElementById('respuestacorrecta' + id).valueAsNumber
- 
-  //Calculamos la nota final
-  let notaFinal = calcularnota(respuesta1, respuestacorrecta);
 
 
 
 
-}
 
