@@ -23,7 +23,7 @@ if (formulario.checkValidity()){
     document.getElementById("datosdelformulario").textContent = " Formulario incorrecto ";
   }
 }
-
+//Calculamos la puntuacion final de todo el examen
 function evaluarTodo(){
   let puntuacionFinal1 = 0;
   for(let numeroPregunta = 1; numeroPregunta10; numeroPregunta++){
@@ -55,10 +55,9 @@ function evaluarTodo(){
   }
 
 
-
   //Pregunta 2
-  function calcularPuntuacionPregunta2() {
-    let respuesta = document.getElementById("respuesta2").value; // Accede al valor del botón seleccionado
+  function calcularPuntuacionPregunta() {
+    let respuesta = document.getElementById("respuesta").value; // Accede al valor del botón seleccionado
     let puntuacion = 0;
     let correcta = "a";
 
@@ -72,13 +71,13 @@ function evaluarTodo(){
     }
 
     // Mostrar la puntuación en el párrafo correspondiente
-    let scoreDisplay = document.getElementById("grademessage2");
+    let scoreDisplay = document.getElementById("grademessage");
     scoreDisplay.textContent = `Tu puntuación para esta pregunta es: ${puntuacion}`;
   }
 
   //Pregunta 3 
-  function calcularPuntuacionPregunta3() {
-    let respuesta = document.getElementById("respuesta3").value; // Accede al valor del botón seleccionado
+  function calcularPuntuacionPregunta() {
+    let respuesta = document.getElementById("respuesta").value; // Accede al valor del botón seleccionado
     let puntuacion = 0;
     let correcta = "b";
 
@@ -92,12 +91,12 @@ function evaluarTodo(){
     }
 
     // Mostrar la puntuación en el párrafo correspondiente
-    let scoreDisplay = document.getElementById("grademessage3");
+    let scoreDisplay = document.getElementById("grademessage");
     scoreDisplay.textContent = `Tu puntuación para esta pregunta es: ${puntuacion}`;
   }
 //Pregunta 4
-function calcularPuntuacionPregunta4() {
-  let respuesta = document.getElementById("respuesta4").value; // Accede al valor del botón seleccionado
+function calcularPuntuacionPregunta() {
+  let respuesta = document.getElementById("respuesta").value; // Accede al valor del botón seleccionado
   let puntuacion = 0;
   let correcta = "b";
 
@@ -111,13 +110,13 @@ function calcularPuntuacionPregunta4() {
   }
 
   // Mostrar la puntuación en el párrafo correspondiente
-  let scoreDisplay = document.getElementById("grademessage4");
+  let scoreDisplay = document.getElementById("grademessage");
   scoreDisplay.textContent = `Tu puntuación para esta pregunta es: ${puntuacion}`;
 }
 
 //Pregunta 5
-function calcularPuntuacionPregunta5() {
-  let respuesta = document.getElementById("respuesta5").value; // Accede al valor del botón seleccionado
+function calcularPuntuacionPregunta() {
+  let respuesta = document.getElementById("respuesta").value; // Accede al valor del botón seleccionado
   let puntuacion = 0;
   let correcta = "b";
 
@@ -131,13 +130,13 @@ function calcularPuntuacionPregunta5() {
   }
 
   // Mostrar la puntuación en el párrafo correspondiente
-  let scoreDisplay = document.getElementById("grademessage5");
+  let scoreDisplay = document.getElementById("grademessage");
   scoreDisplay.textContent = `Tu puntuación para esta pregunta es: ${puntuacion}`;
 }
 
 //Pregunta 6
-function calcularPuntuacionPregunta6() {
-  let respuesta = document.getElementById("respuesta6").value; // Accede al valor del botón seleccionado
+function calcularPuntuacionPregunta() {
+  let respuesta = document.getElementById("respuesta").value; // Accede al valor del botón seleccionado
   let puntuacion = 0;
   let correcta = "c";
 
@@ -151,13 +150,13 @@ function calcularPuntuacionPregunta6() {
   }
 
   // Mostrar la puntuación en el párrafo correspondiente
-  let scoreDisplay = document.getElementById("grademessage6");
+  let scoreDisplay = document.getElementById("grademessage");
   scoreDisplay.textContent = `Tu puntuación para esta pregunta es: ${puntuacion}`;
 }
 
 //Pregunta 7
-function calcularPuntuacionPregunta7() {
-  let respuesta = document.getElementById("respuesta7").value; // Accede al valor del botón seleccionado
+function calcularPuntuacionPregunta() {
+  let respuesta = document.getElementById("respuesta").value; // Accede al valor del botón seleccionado
   let puntuacion = 0;
   let correcta = "a";
 
@@ -171,13 +170,13 @@ function calcularPuntuacionPregunta7() {
   }
 
   // Mostrar la puntuación en el párrafo correspondiente
-  let scoreDisplay = document.getElementById("grademessage7");
+  let scoreDisplay = document.getElementById("grademessage");
   scoreDisplay.textContent = `Tu puntuación para esta pregunta es: ${puntuacion}`;
 }
 
 //Pregunta 8
-function calcularPuntuacionPregunta8() {
-  let respuesta = document.getElementById("respuesta8").value; // Accede al valor del botón seleccionado
+function calcularPuntuacionPregunta() {
+  let respuesta = document.getElementById("respuesta").value; // Accede al valor del botón seleccionado
   let puntuacion = 0;
   let correcta = "c";
 
@@ -191,13 +190,13 @@ function calcularPuntuacionPregunta8() {
   }
 
   // Mostrar la puntuación en el párrafo correspondiente
-  let scoreDisplay = document.getElementById("grademessage8");
+  let scoreDisplay = document.getElementById("grademessage");
   scoreDisplay.textContent = `Tu puntuación para esta pregunta es: ${puntuacion}`;
 }
 
 //Pregunta 9
-function calcularPuntuacionPregunta9() {
-  let respuesta = document.getElementById("respuesta9").value; // Accede al valor del botón seleccionado
+function calcularPuntuacionPregunta() {
+  let respuesta = document.getElementById("respuesta").value; // Accede al valor del botón seleccionado
   let puntuacion = 0;
   let correcta = "c";
 
@@ -211,13 +210,13 @@ function calcularPuntuacionPregunta9() {
   }
 
   // Mostrar la puntuación en el párrafo correspondiente
-  let scoreDisplay = document.getElementById("grademessage9");
+  let scoreDisplay = document.getElementById("grademessage");
   scoreDisplay.textContent = `Tu puntuación para esta pregunta es: ${puntuacion}`;
 }
 
 //Pregunta 10
-function calcularPuntuacionPregunta10() {
-  let respuesta = document.getElementById("respuesta10").value; // Accede al valor del botón seleccionado
+function calcularPuntuacionPregunta() {
+  let respuesta = document.getElementById("respuesta").value; // Accede al valor del botón seleccionado
   let puntuacion = 0;
   let correcta = "c";
 
@@ -231,15 +230,10 @@ function calcularPuntuacionPregunta10() {
   }
 
   // Mostrar la puntuación en el párrafo correspondiente
-  let scoreDisplay = document.getElementById("grademessage10");
+  let scoreDisplay = document.getElementById("grademessage");
   scoreDisplay.textContent = `Tu puntuación para esta pregunta es: ${puntuacion}`;
 }
 
-
-
-function calcularPreguntaPuntuacion(){
-
-}
 
 
 
