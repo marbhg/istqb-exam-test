@@ -25,22 +25,22 @@ if (formulario.checkValidity()){
 }
 //Calculamos la puntuacion final de todo el examen
 function evaluarTodo(){
-  let puntuacionFinal1 = 0;
-  for(let numeroPregunta = 1; numeroPregunta10; numeroPregunta++){
+  let puntuacionFinal = 0;
+  for(let numeroPregunta = 1; numeroPregunta<=10; numeroPregunta++){
   puntuacionFinal += calcularPuntuacionPregunta(numeroPregunta);
   }
-  document.getElementById('resultado'.textContent = "La puntuacion final es " + puntuacionFinal);
+  document.getElementById('gradeexammessage').textContent = "La puntuacion final es " + puntuacionFinal;
 }
 
 
 //Pregunta 1
   function calcularPuntuacionPregunta(numeroPregunta) {
-    let respuesta = document.getElementById("respuesta " + numeroPregunta).value; // Accede al valor del botón seleccionado
+    let respuesta = document.getElementById("respuesta" + numeroPregunta).value; // Accede al valor del botón seleccionado
     let puntuacion = 0;
     let correcta = ["c","a","b","a","a","c","b","a","a","c"];
 
     // Calcular la puntuación según las reglas
-    if (respuesta === correcta) {
+    if (respuesta === correcta[numeroPregunta-1]) {
       puntuacion = 2; // Respuesta correcta
     } else if (respuesta === "") {
       puntuacion = 0; // Respuesta vacia
@@ -49,12 +49,12 @@ function evaluarTodo(){
     }
 
     // Mostrar la puntuación en el párrafo correspondiente
-    let scoreDisplay = document.getElementById("grademessage " + numeroPregunta);
+    let scoreDisplay = document.getElementById("grademessage" + numeroPregunta);
     scoreDisplay.textContent = `Tu puntuación para esta pregunta es: ${puntuacion}`;
     return puntuacion;  
   }
 
-
+/* 
   //Pregunta 2
   function calcularPuntuacionPregunta() {
     let respuesta = document.getElementById("respuesta").value; // Accede al valor del botón seleccionado
@@ -234,6 +234,7 @@ function calcularPuntuacionPregunta() {
   scoreDisplay.textContent = `Tu puntuación para esta pregunta es: ${puntuacion}`;
 }
 
+*/
 
 
 
