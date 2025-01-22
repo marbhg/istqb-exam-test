@@ -55,10 +55,7 @@
                 <option value="b">B.Testing is the process of running software, while debugging is the process of analyzing the software.</option>
                 <option value="c">C.Testing verifies requirements, while debugging verifies design.</option>
                 <option value="d">Sin responder</option>
-
-            </select>
-                <p id="grademessage2"></p>
-                <button type="button" onclick="calcularPuntuacionPregunta2()">Corregir</button>
+              </select>
             </form>
        
 
@@ -74,9 +71,6 @@
                         <option value="c">C.Using boundary value analysis (BVA) to derive the test data for the test cases that check the correct payment processing for the minimum allowed amount to  be paid.</option>
                         <option value="d">Sin responder</option>
                     </select>
-
-                    <p id="grademessage3"></p>
-                    <button type="button" onclick="calcularPuntuacionPregunta3()">Corregir</button>
                 </form>
 
                        <form id="respuesta4">
@@ -89,9 +83,7 @@
                             <option value="b">B.Whether or not the targeted coverage has been achieved can be more efficiently determined.</option>
                             <option value="c">C.The test management role can determine which testers found the defects with the highest severity.</option>
                             <option value="d">Sin responder</option>
-                        </select>
-                        <p id="grademessage4"></p>
-                        <button type="button" onclick="calcularPuntuacionPregunta4()">Corregir</button>
+                            </select>
                     </form>
 
                       
@@ -104,9 +96,7 @@
                             <option value="b">B.The testing role performs test analysis and test design activities,creates and executes test cases, and the test management role coordinates testing resources and reports to stakeholders</=>
                             <option value="c">C.The testing role decides the tests to be automated and prioritizes test cases,and the test management role analyzes risks and prioritizes tests.</option>
                             <option value="d">Sin responder</option>
-                        </select>
-                            <p id="grademessage5"></p>
-                            <button type="button" onclick="calcularPuntuacionPregunta5()">Corregir</button>
+                            </select>
                         </form>
 
                 
@@ -121,8 +111,6 @@
                                               be useful in questioning those assumptions and the interpretation made by the developer.</option>
                          <option value="d">Sin responder</option>
                         </select>    
-                                <p id="grademessage6"></p>
-                                <button type="button" onclick="calcularPuntuacionPregunta6()">Corregir</button>
                             </form>
 
     
@@ -136,9 +124,7 @@
                         <option value="c">C.Business representatives decide together with project management on test automation approaches.</option>
                         <option value="d">Sin responder</option>
                     </select>     
-                        <p id="grademessage7"></p>
-                        <button type="button" onclick="calcularPuntuacionPregunta1()">Corregir</button>
-                                </form>
+                   </form>
 
                                     
                          <form id="respuesta8">
@@ -151,8 +137,6 @@
                         <option value="c">C.Testing should start early in the development process.</option>
                         <option value="d">Sin responder</option>
                     </select>           
-                        <p id="grademessage8"></p>
-                       <button type="button" onclick="calcularPuntuacionPregunta8()">Corregir</button>
                        </form>
 
                           
@@ -166,9 +150,7 @@
                     <option value="c">C.With ATDD, tests are based on the desired behavior of the software, whick makes it easier for team members to understand the tests and the defined  acceptance criteria.</option>
                     <option value="d">Sin responder</option>
                 </select>                      
-                    <p id="grademessage9"></p>
-                    <button type="button" onclick="calcularPuntuacionPregunta9()">Corregir</button>
-                    </form>
+                 </form>
 
 
                      <form id="respuesta10">
@@ -180,10 +162,14 @@
                      <option value="c">C.Execution of non-functional tests, starting during system level testing.</option>
                      <option value="d">Sin responder</option>
                     </select>                 
-                    <p id="grademessage10"></p>
+                  
                     <button type="button" onclick="calcularPuntuacionPregunta10()">Corregir</button>
                     </form>
                     <button type="button" onclick="evaluarTodo()">Evaluar todo</button>
+                    <div id="gradeexammessage"></div>
+
+                    <div id="resultadoFinal"></div>
+                    <button onclick="mostrarResultadoFinal()">Ver resultado</button>
                     <div id="gradeexammessage"></div>
     </section>
     

@@ -51,5 +51,17 @@ function evaluarTodo(){
     let scoreDisplay = document.getElementById("grademessage" + numeroPregunta);
     scoreDisplay.textContent = `Tu puntuación para esta pregunta es: ${puntuacion}`;
     return puntuacion;  
+    
+    function mostrarResultadoFinal() {
+      const resultado = document.getElementById("resultadoFinal");
+      if (puntuacionTotal > 12) {
+        resultado.textContent = `¡Enhorabuena! Has aprobado con una puntuación de ${puntuacionTotal} puntos.`;
+        resultado.style.color = "green";
+      } else {
+        resultado.textContent = `Lo sentimos, has suspendido con una puntuación de ${puntuacionTotal} puntos.`;
+        resultado.style.color = "red";
+      }
+    }
+
   }
 
