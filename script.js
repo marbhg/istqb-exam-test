@@ -47,21 +47,16 @@ function evaluarTodo(){
       puntuacion = -1; // Incorrecta
     }
 
-    // Mostrar la puntuación en el párrafo correspondiente
-    let scoreDisplay = document.getElementById("grademessage" + numeroPregunta);
-    scoreDisplay.textContent = `Tu puntuación para esta pregunta es: ${puntuacion}`;
-    return puntuacion;  
-    
-    function mostrarResultadoFinal() {
-      const resultado = document.getElementById("resultadoFinal");
-      if (puntuacionTotal > 12) {
-        resultado.textContent = `¡Enhorabuena! Has aprobado con una puntuación de ${puntuacionTotal} puntos.`;
-        resultado.style.color = "green";
-      } else {
-        resultado.textContent = `Lo sentimos, has suspendido con una puntuación de ${puntuacionTotal} puntos.`;
-        resultado.style.color = "red";
-      }
-    }
+  }
+  function colorResultado(correcta) {
+    // devolvemos el color que debe mostrar segun la puntuacion obtenida
+    let color = 'green';
+    if (correcta > 12) {
+        color = 'green';
+    } else (correcta < 5)
+    {
+        color = 'red';
+    return color;
 
   }
-
+}
