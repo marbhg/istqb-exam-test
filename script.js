@@ -52,10 +52,13 @@ if (puntuacionFinal < 0){
     } else {
       puntuacion = -1; // Incorrecta
     }
+
+    document.getElementById("gradeexammessage" +  numeroPregunta).textContent = "El resultado de la pregunta es " + puntuacion; 
      return puntuacion;
 
-
   }
+
+
   function colorResultado(correcta) {
     // devolvemos el color que debe mostrar segun la puntuacion obtenida
     let color = 'green';
