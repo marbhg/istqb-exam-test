@@ -35,7 +35,7 @@ if (puntuacionFinal < 0){
 }
 
   document.getElementById('gradeexammessage').textContent = "La puntuacion final es " + puntuacionFinal;
-  document.getElementById('gradeexammessage').style = colorResultado(puntuacionFinal)
+  document.getElementById('gradeexammessage').style.color = colorResultado(puntuacionFinal)
 }
 
 //Hacemos una funcion para calcular todas las preguntas. 
@@ -53,7 +53,7 @@ if (puntuacionFinal < 0){
       puntuacion = -1; // Incorrecta
     }
 
-    document.getElementById("gradeexammessage" +  numeroPregunta).textContent = "El resultado de la pregunta es " + puntuacion; 
+    document.getElementById("grademessage" +  numeroPregunta).textContent = "El resultado de la pregunta es " + puntuacion; 
      return puntuacion;
 
   }
