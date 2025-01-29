@@ -29,7 +29,13 @@ function evaluarTodo(){
   for(let numeroPregunta = 1; numeroPregunta<=10; numeroPregunta++){
   puntuacionFinal += calcularPuntuacionPregunta(numeroPregunta);
   }
+
+if (puntuacionFinal < 0){
+  puntuacionFinal = 0;
+}
+
   document.getElementById('gradeexammessage').textContent = "La puntuacion final es " + puntuacionFinal;
+  document.getElementById('gradeexammessage').style = colorResultado(puntuacionFinal)
 }
 
 //Hacemos una funcion para calcular todas las preguntas. 
@@ -46,6 +52,8 @@ function evaluarTodo(){
     } else {
       puntuacion = -1; // Incorrecta
     }
+     return puntuacion;
+
 
   }
   function colorResultado(correcta) {
@@ -53,10 +61,8 @@ function evaluarTodo(){
     let color = 'green';
     if (correcta > 12) {
         color = 'green';
-    } else (correcta < 5)
-    {
+    } else {
         color = 'red';
-    return color;
-
   }
+     return color;
 }

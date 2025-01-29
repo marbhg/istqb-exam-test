@@ -35,11 +35,10 @@
         <form id="respuesta1">    
             <p>1. Which of the following statements describes an achievable test objective?</p>
             <select id="respuesta1">
-                <option value=""> - - </option>
+                <option value=""> Sin respoonder </option>
                 <option value="a">A. To prove that there are no unfixed defects in the system under test</option>
                 <option value="b">B. To prove that there will be no failures after the implementation of the system into production</option>
                 <option value="c">C. To reduce the risk level of the test object and to build confidence in the quality level</option>
-                <option value="d">Sin responder</option>
                 <p id="respuestaCorrecta"></p>
             </select>
 
@@ -50,14 +49,15 @@
             <form id="respuesta2">
                 <p>2. What is the main difference between testing and debugging?</p>
                 <select id="respuesta2">
-                <option value="">- -</option>
-                <option value="a">A.Testing is the process of finding defects, while debugging is the process of fixing defects </option>
+                    <option value=""> Sin respoonder </option>
+                    <option value="a">A.Testing is the process of finding defects, while debugging is the process of fixing defects </option>
                 <option value="b">B.Testing is the process of running software, while debugging is the process of analyzing the software.</option>
                 <option value="c">C.Testing verifies requirements, while debugging verifies design.</option>
-                <option value="d">Sin responder</option>
               </select>
+              <p id="grademessage2"></p>
             </form>
-       
+            
+
 
                 <form id="respuesta3">
                     <p>3. You work in a team that develops a mobile application for ordering food.
@@ -65,11 +65,10 @@
                         functionality.
                         Which of the following activities is a part of test analysis?</p>
                     <select id="respuesta3">
-                        <option value=""> - - </option>
+                        <option value=""> Sin respoonder </option>
                         <option value="a">A..Perform the effort estimation for testing the integration of the mobile application with the payment service </option>
                         <option value="b">B.Decide whether to test the ability to split payments among multiple users</option>
                         <option value="c">C.Using boundary value analysis (BVA) to derive the test data for the test cases that check the correct payment processing for the minimum allowed amount to  be paid.</option>
-                        <option value="d">Sin responder</option>
                     </select>
                 </form>
 
@@ -163,13 +162,9 @@
                      <option value="d">Sin responder</option>
                     </select>                 
                   
-                    <button type="button" onclick="calcularPuntuacionPregunta10()">Corregir</button>
+        
                     </form>
                     <button type="button" onclick="evaluarTodo()">Evaluar todo</button>
-                    <div id="gradeexammessage"></div>
-
-                    <div id="resultadoFinal"></div>
-                    <button onclick="mostrarResultadoFinal()">Ver resultado</button>
                     <div id="gradeexammessage"></div>
     </section>
     
