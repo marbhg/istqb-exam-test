@@ -35,7 +35,7 @@
 
         <form id="pregunta1">
             <p>1. Which of the following statements describes an achievable test objective?</p>
-            <select id="respuesta1">
+            <select data-testid="resp1" id=respuesta1">
                 <option value="">Unanswered</option>
                 <option value="a">A. To prove that there are no unfixed defects in the system under test</option>
                 <option value="b">B. To prove that there will be no failures after the implementation of the system into
@@ -45,13 +45,13 @@
                 <p id="respuestaCorrecta"></p>
             </select>
 
-            <p id="grademessage1"></p>
+            <p data-testid="resultadopregunta1" id="grademessage1"></p>
         </form>
 
 
         <form id="pregunta2">
             <p>2. What is the main difference between testing and debugging?</p>
-            <select id="respuesta2">
+            <select data-testid="resp2" id="respuesta2">
                 <option value="">Unanswered</option>
                 <option value="a">A.Testing is the process of finding defects, while debugging is the process of fixing
                     defects </option>
@@ -59,7 +59,7 @@
                     analyzing the software.</option>
                 <option value="c">C.Testing verifies requirements, while debugging verifies design.</option>
             </select>
-            <p id="grademessage2"></p>
+            <p data-testid="resultadopregunta2" id="grademessage2"></p>
         </form>
 
 
@@ -69,7 +69,7 @@
                 In the current iteration the team decides to implement the payment
                 functionality.
                 Which of the following activities is a part of test analysis?</p>
-            <select id="respuesta3">
+            <select data-testid="resp3" id="respuesta3">
                 <option value="">Unanswered</option>
                 <option value="a">A..Perform the effort estimation for testing the integration of the mobile application
                     with the payment service </option>
@@ -77,14 +77,14 @@
                 <option value="c">C.Using boundary value analysis (BVA) to derive the test data for the test cases that
                     check the correct payment processing for the minimum allowed amount to be paid.</option>
             </select>
-            <p id="grademessage3"></p>
+            <p data-testid="resultadopregunta3" id="grademessage3"></p>
         </form>
 
         <form id="pregunta4">
             <p>4. Which of the following statements BEST describes how value is added by
                 establishing and maintaining traceability between the test base and the
                 test ware?</p>
-            <select id="respuesta4">
+            <select data-testid="resp4" id="respuesta4">
                 <option value="">Unanswered</option>
                 <option value="a">A.Maintenance testing can be fully automated on the basis of changes to the original
                     requirements.</option>
@@ -93,14 +93,14 @@
                 <option value="c">C.The test management role can determine which testers found the defects with the
                     highest severity.</option>
             </select>
-            <p id="grademessage4"></p>
+            <p data-testid="resultadopregunta4" id="grademessage4"></p>
         </form>
 
 
         <form id="pregunta5">
             <p>5. Which of the following statements BEST compares the different roles in
                 testing?</p>
-            <select id="respuesta5">
+            <select data-testid="resp5" id="respuesta5">
                 <option value="">Unanswered</option>
                 <option value="a"> A.The testing role executes test cases, the test management role plans and monitors
                     the testing activities and reports the deviation to all testers.</option>
@@ -110,13 +110,13 @@
                 <option value="c">C.The testing role decides the tests to be automated and prioritizes test cases,and
                     the test management role analyzes risks and prioritizes tests.</option>
             </select>
-            <p id="grademessage5"></p>
+            <p data-testid="resultadopregunta5" id="grademessage5"></p>
         </form>
 
 
         <form id="pregunta6">
             <p>6. Which of the following BEST explains a benefit of independence of testing?</p>
-            <select id="respuesta6">
+            <select data-testid="resp6" id="respuesta6">
                 <option value="">Unanswered</option>
                 <option value="a">A.The use of an independent test team allows project management to assign
                     responsibility for the quality of the final deliverable to the test team.</option>
@@ -127,21 +127,21 @@
                     developers on their interpretation, and an independent test team can
                     be useful in questioning those assumptions and the interpretation made by the developer.</option>
             </select>
-            <p id="grademessage6"></p>
+            <p data-testid="resultadopregunta6" id="grademessage6"></p>
         </form>
 
 
         <form id="pregunta7">
             <p>7. How is the whole team approach present in the interactions between
                 testers and business representatives?</p>
-            <select id="respuesta7">
+            <select data-testid="resp7" id="respuesta7">
                 <option value="">Unanswered</option>
                 <option value="a">A.Testers help business representatives to create suitable acceptance tests.</option>
                 <option value="b">B.Business representatives are not part of the whole team approach</option>
                 <option value="c">C.Business representatives decide together with project management on test automation
                     approaches.</option>
             </select>
-            <p id="grademessage7"></p>
+            <p data-testid="resultadopregunta7" id="grademessage7"></p>
 
         </form>
 
@@ -149,20 +149,20 @@
         <form id="pregunta8">
             <p>8. Which of the following statements BEST describes a good practice for
                 testing that applies to all software development lifecycles?</p>
-            <select id="respuesta8">
+            <select data-testid="resp8" id="respuesta8">
                 <option value="">Unanswered</option>
                 <option value="a">A.Testing should be performed only after development is complete.</option>
                 <option value="b">B.Testing should be performed under the leadership of development.</option>
                 <option value="c">C.Testing should start early in the development process.</option>
             </select>
-            <p id="grademessage8"></p>
+            <p data-testid="resultadopregunta8" id="grademessage8"></p>
         </form>
 
 
         <form id="pregunta9">
             <p>9. Which of the following statements BEST describes the acceptance test
                 driven development (ATDD) approach?</p>
-            <select id="respuesta9">
+            <select data-testid="resp9" id="respuesta9">
                 <option value="">Unanswered</option>
                 <option value="a">A.In ATDD, tests are derived from acceptance criteria as part of the system design.
                 </option>
@@ -171,20 +171,20 @@
                 <option value="c">C.With ATDD, tests are based on the desired behavior of the software, whick makes it
                     easier for team members to understand the tests and the defined acceptance criteria.</option>
             </select>
-            <p id="grademessage9"></p>
+            <p data-testid="resultadopregunta9" id="grademessage9"></p>
         </form>
 
 
         <form id="pregunta10">
             <p>10. Which of the following is NOT an example of the shift left approach?</p>
-            <select id="respuesta10">
+            <select data-testid="resp10" id="respuesta10">
                 <option value="">Unanswered</option>
                 <option value="a">A.Reviewing the user requirements before they are formally accepted by the
                     stakeholders.</option>
                 <option value="b">B.Create component test cases before programming the associated code.</option>
                 <option value="c">C.Execution of non-functional tests, starting during system level testing.</option>
             </select>
-            <p id="grademessage10"></p>
+            <p data-testid="resultadopregunta10" id="grademessage10"></p>
 
         </form>
         <button type="button" onclick="evaluarTodo()">Evaluate everything</button>
