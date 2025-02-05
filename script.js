@@ -20,7 +20,7 @@ function validarFormulario() {
     enviar()
   }
   else {
-    document.getElementById("datosdelformulario").textContent = " Invalid form ";
+    document.getElementById("datosdelformulario").textContent = "Invalid form";
   }
 }
 //Calculamos la puntuacion final de todo el examen
