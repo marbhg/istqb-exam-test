@@ -34,7 +34,7 @@ function evaluarTodo() {
     puntuacionFinal = 0;
   }
 
-  document.getElementById('gradeexammessage').textContent = "La puntuacion final es " + puntuacionFinal;
+  document.getElementById('gradeexammessage').textContent = "La puntuacion final es" + puntuacionFinal;
   document.getElementById('gradeexammessage').style.color = colorResultado(puntuacionFinal)
 }
 
@@ -53,11 +53,10 @@ function calcularPuntuacionPregunta(numeroPregunta) {
     puntuacion = -1; // Incorrecta
   }
 
-  document.getElementById("grademessage" + numeroPregunta).textContent = "El resultado de la pregunta es " + puntuacion;
+  document.getElementById("grademessage" + numeroPregunta).textContent = "El resultado de la pregunta es" + puntuacion;
   return puntuacion;
 
 }
-
 
 function colorResultado(correcta) {
   // devolvemos el color que debe mostrar segun la puntuacion obtenida
