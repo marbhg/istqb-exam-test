@@ -99,6 +99,17 @@ p {
     max-width: 800px;
 }
 
+#questionsection select {
+    width: 100%; /* Make select full-width */
+    padding: 10px;
+    margin: 5px 0 15px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box; /* Include padding and border in element's total width and height */
+    font-size: 1em;
+}
+
+
 #questionsection h2 {
     color: #04700f;
 }
